@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row justify-between items-center px-6 md:px-14 py-4 md:py-7 gap-4">
                 <div>
                     <div className="font-extrabold self-center text-2xl text-white">
-                        SEIFUN<span className="text-lg">.xyz</span>
+                        PopTokens<span className="text-lg">.xyz</span>
                     </div>
                 </div>
                 <div className="hidden md:block">

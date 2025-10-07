@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get('/', (req, res) => {
-    res.send('Backend is running!!')
+    res.send('Backend is running!!');
 })
 
 // Routes
@@ -22,5 +22,5 @@ const PORT = 5000
 
 app.listen(PORT, async () => {
     await connectDatabase()
-    console.log('Server started on port 5000')
+    console.log('MongoDB listening')
 })

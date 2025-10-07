@@ -56,14 +56,14 @@ export default function Navbar() {
                     <img className="w-6 md:w-12 h-auto mr-2" src='./logo.webp' alt="logo" />
                     <h1 className="text-xl md:text-3xl font-bold tracking-widest">
                         <Link to="/">
-                            SEIFUN<span className="text-sky-500 text-lg">.xyz</span>
+                            PopTokens<span className="text-sky-500 text-lg">.xyz</span>
                         </Link>
                     </h1>
                 </div>
 
                 {/* Search (only desktop) */}
                 {shouldShowSearch && (
-                    <div className="hidden xl:block w-1/2">
+                    <div className="hidden xl:block flex-1 max-w-[500px] ml-6">
                         <Search />
                     </div>
                 )}

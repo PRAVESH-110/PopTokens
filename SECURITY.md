@@ -21,4 +21,4 @@ Once confirmed, appropriate actions will be taken and disclosed responsibly.
 
 ---
 
-ℹ️ *This policy will evolve once Seifun reaches its first official release.*
+ℹ️ *This policy will evolve once poptokens reaches its first official release.*
