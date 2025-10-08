@@ -129,7 +129,7 @@ export default function MemeCoinLists() {
                         </div>
                         <div className="hover:text-blue-500 duration-300">
                             <a
-                                href="https://github.com/mohitgit-hub/SeiFun"
+                                href="https://github.com/PRAVESH-110/PopTokens"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

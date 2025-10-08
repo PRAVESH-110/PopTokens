@@ -3,6 +3,8 @@ import { getFactoryContractWithSigner } from '../../constants/factoryconfig'
 import { uploadImage, createCoinInDB } from '../../services/api'
 import CoinForm from './CoinForm'
 import { showToast } from '../ui/Toast' // adjust path as needed
+import { useNavigate } from 'react-router-dom'
+
 
 function AddCoins() {
     const [formData, setFormData] = useState({

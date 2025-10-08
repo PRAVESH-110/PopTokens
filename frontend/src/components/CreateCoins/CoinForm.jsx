@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FiRefreshCw } from 'react-icons/fi'
-
+import { useNavigate } from 'react-router-dom'
 import { GoogleGenAI } from '@google/genai'
 
 const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API })
@@ -9,6 +9,8 @@ function CoinForm({ formData, setFormData, handleSubmit }) {
     const [showMoreOptions, setShowMoreOptions] = useState(false)
     const [loadingTicker, setLoadingTicker] = useState(false)
     const [loadingDescription, setLoadingDescription] = useState(false)
+    const navigate = useNavigate();
+
 
     const handleChange = (e) => {
         const { name, value } = e.target
