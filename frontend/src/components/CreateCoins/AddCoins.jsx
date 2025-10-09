@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 function AddCoins() {
+    const navigate = useNavigate()
     const [formData, setFormData] = useState({
         tickerTitle: '',
         description: '',
@@ -92,6 +93,11 @@ function AddCoins() {
         }
 
         await createCoinInDB({ ...updatedData, path: imgURL }, (msg, type) => showToast(msg, type))
+        
+        // Navigate to homepage after 2 seconds to show success message
+        setTimeout(() => {
+            navigate('/')
+        }, 1000)
     }
 
     return (
