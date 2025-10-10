@@ -22,6 +22,9 @@ export default function MemeCoinLists() {
     const searchQuery = useSelector((state) => state.search.query) // Get the search query from Redux
 
     const fetchBackendCoins = async () => {
+        // Show loading message immediately
+        showToast('Please wait while the existing coins are loading...', 'info')
+        
         try {
             const backendRes = await axios.get(
                 `${import.meta.env.VITE_BACKEND_URL}api/coin/getCoins`

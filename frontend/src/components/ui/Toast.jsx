@@ -12,7 +12,12 @@ export const showToast = (message, type = 'default') => {
             toast.error(message)
             break
         case 'info':
-            toast.info(message)
+            toast.info(message, {
+                style: {
+                    background: '#581c87', // Dark purple
+                    color: '#ffffff', // White text
+                }
+            })
             break
         case 'warning':
             toast.warning(message)
