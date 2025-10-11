@@ -122,15 +122,9 @@ export default function MemeCoinLists() {
                 <div className="hidden xl:flex xl:space-x-4 flex-wrap mx-auto xl:flex-col">
                     <div className="flex justify-center mb-6 space-x-8 items-center">
                         <div className="hover:text-blue-500 duration-300">
-                            <a
-                                href="https://x.com/SeiFunAI"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <BsTwitterX size={28} />
-                            </a>
                         </div>
                         <div className="hover:text-blue-500 duration-300">
+
                             <a
                                 href="https://github.com/PRAVESH-110/PopTokens"
                                 target="_blank"
@@ -138,25 +132,11 @@ export default function MemeCoinLists() {
                             >
                                 <FaGithub size={28} />
                             </a>
+
                         </div>
-                        <div className="hover:text-blue-500 duration-300">
-                            <a
-                                href="https://t.me/SeiFunAI"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <BiLogoTelegram size={28} />
-                            </a>
-                        </div>
-                        <div className="hover:text-blue-500 duration-300">
-                            <a
-                                href="https://www.youtube.com/watch?v=EI7vDf_F7i8"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <AiFillYoutube size={30} />
-                            </a>
-                        </div>
+
+                        
+                        
                     </div>
                     <div className="flex space-x-4 mb-4">
                         <div className="mb-4 xl:mb-0 mx-4 xl:mx-0">
