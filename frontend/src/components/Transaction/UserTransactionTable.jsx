@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import WalletConnect from '../Wallet/WalletConnect'
 
 const UserTransactionTable = () => {
     const [transactions, setTransactions] = useState([])
@@ -185,52 +186,12 @@ const UserTransactionTable = () => {
                 User Transaction History
             </h2>
             <p className="text-gray-500 text-sm text-center mb-6">
-                *Note: This table is under construction, data you may see will not be correct
+                No transaction to show
             </p>
-            <div className="overflow-x-auto rounded-md">
-                <table className="min-w-full text-sm text-left text-gray-400">
-                    <thead className="text-xs uppercase  text-blue-600 bg-gray-800">
-                        <tr>
-                            <th className="px-4 py-3 tracking-wider">ID</th>
-                            <th className="px-4 py-3 tracking-wider">User ID</th>
-                            <th className="px-4 py-3 tracking-wider">Coin</th>
-                            <th className="px-4 py-3 tracking-wider">Type</th>
-                            <th className="px-4 py-3 tracking-wider">Quantity</th>
-                            <th className="px-4 py-3 tracking-wider">Price</th>
-                            <th className="px-4 py-3 tracking-wider">Timestamp</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {transactions.map((txn) => (
-                            <tr
-                                key={txn.id}
-                                className="bg-darkGray border-b border-gray-700 hover:bg-gray-800 transition"
-                            >
-                                <td className="px-4 py-2 tracking-wider">{txn.id}</td>
-                                <td className="px-4 py-2 tracking-wider">{txn.userId}</td>
-                                <td className="px-4 py-2 tracking-wider">{txn.coin}</td>
-                                <td className="px-4 py-2 tracking-wider capitalize">
-                                    <span
-                                        className={`text-md font-semibold tracking-wider ${
-                                            txn.type === 'buy' ? 'text-green-700' : 'text-red-700'
-                                        }`}
-                                    >
-                                        {txn.type}
-                                    </span>
-                                </td>
-                                <td className="px-4 py-2 tracking-wider">{txn.quantity}</td>
-                                <td className="px-4 py-2 tracking-wider flex gap-1">
-                                    <span>$</span>
-                                    {formatCompactNumber(txn.price)}
-                                </td>
-                                <td className="px-4 py-2 tracking-wider">
-                                    {new Date(txn.timestamp).toLocaleString()}
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </div>
+            <br />      <br />
+
+            <WalletConnect/>
+            
         </div>
     )
 }

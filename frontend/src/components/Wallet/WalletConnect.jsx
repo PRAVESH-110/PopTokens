@@ -57,12 +57,13 @@ function CustomWalletCard() {
     }
 
     return (
-        <div className="max-w-sm min-h-screen flex flex-col mx-auto">
-            <h5 className="mb-3 text-base font-semibold  lg:text-xl text-white">
+        <div className="max-w-sm mt-15  min-h-screen flex flex-col mx-auto">
+            <h5 className="mb-3 text-base font-semibold text-center justify-center align-items-center
+            lg:text-xl text-white">
                 Connect wallet
             </h5>
             <p className="text-sm font-normal mb-4 text-gray-400">
-                Connect with one of our available wallet providers
+                Connect with one of our available wallet providers to continue
             </p>
 
             <div className="flex flex-col gap-4">
