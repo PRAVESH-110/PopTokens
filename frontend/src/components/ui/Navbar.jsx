@@ -56,7 +56,7 @@ export default function Navbar() {
                     <img className="w-6 md:w-12 h-auto mr-2" src='./logo.webp' alt="logo" />
                     <h1 className="text-xl md:text-3xl font-bold tracking-widest">
                         <Link to="/">
-                            PopTokens<span className="text-sky-500 text-lg">.xyz</span>
+                            PopTokens
                         </Link>
                     </h1>
                 </div>

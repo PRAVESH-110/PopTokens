@@ -1,7 +1,7 @@
 /*
 Factory contract use to create ERC20 Token and Send supply to marketplace Contract.
 This contract creates multiple instances of TokenCreate.sol and Marketplace.sol allows users to create tokens and trade tokens.
-Contract Address - 0x17131a4EaB3532e16Da3b2236DE82D5D5379498b
+Contract Address - 0xb5a0bca9bc73872740de1f1bd1f7f8863f014826
 TXN -https://seitrace.com/tx/0xe5f82110139e7efd401eee64f779db774a43b2d6a8c72de69ba02a34a5529bce?chain=atlantic-2
 */
 

@@ -175,7 +175,7 @@ export default function MemeCoinLists() {
                                 OUR 💪NO CODE
                                 <span className="text-slate-100">
                                     {' '}
-                                    PopTokens<span className="text-sm text-blue-500">.xyz</span> 👉
+                                    PopTokens 👉
                                 </span>
                             </span>
                             <span className="text-xl ml-2">
