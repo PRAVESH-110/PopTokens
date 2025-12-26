@@ -9,6 +9,9 @@ import './services/walletConnection.jsx'
 import store from './redux/store.js'
 import { SkeletonTheme } from 'react-loading-skeleton'
 import Loader from './components/ui/Loader'
+import About from './pages/About'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import Contact from './pages/Contact'
 
 // lazy imports
 const CreateCoins = lazy(() => import('./pages/CreateCoins'))
@@ -36,6 +39,9 @@ function App() {
                                     path="/userTransactions"
                                     element={<UserTransactionTable />}
                                 />
+                                <Route path='/about' element={<About />} />
+                                <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+                                <Route path='/contact' element={<Contact />} />
                             </Route>
                         </Routes>
                         <Toast />
